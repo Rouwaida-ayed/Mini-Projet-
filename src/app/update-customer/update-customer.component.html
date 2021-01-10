@@ -1,0 +1,35 @@
+<div class="container">
+  <div>
+  <h2>Modifier un Client :</h2>
+  </div>
+  <form >
+  <div  class="col-sm-2 col-md-2 col-lg-2">
+  <label >Id Client</label>
+  <input readonly type="text" [(ngModel)]="currentCustomer.id"
+  name="id" class="form-control">
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4" >
+  <label >Nom Client</label>
+  <input type="text"[(ngModel)]= "currentCustomer.nom"
+  name="nom" class="form-control">
+  </div>
+  <div class="col-sm-2 col-md-2 col-lg-2">
+  <label >Prenom Client</label>
+  <input type="text" [(ngModel)]= "currentCustomer.prenom"
+  name="prenom" class="form-control">
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4">
+  <label >Adresse Client</label>
+  <input type="text" [ngModel]="currentCustomer.adresse"
+ name="adresse" class="form-control">
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4">
+    <label >Phone Client</label>
+    <input type="number" [ngModel]="currentCustomer.phone"
+   name="phone" class="form-control">
+    </div>
+  <div class="mt-2">
+  <button type="submit" (click)="updateCustomer()" class="btn btn-success">Modifer</button>
+  </div>
+  </form>
+  </div>
